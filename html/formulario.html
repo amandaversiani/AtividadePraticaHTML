@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <div class="form">
+        <h1>Exemplo de Tela de Login</h1>
+
+        <form action=""><!--Criando um  formulário-->
+            <fieldset> <!--grupo de campos-->
+                <legend><!--titulo do grupo-->
+                    Login
+                </legend>
+                <label for="login">Login: </label><!--Rótulo do input-->
+                <input type="text" name="login"><!--Entrada de dados do tipo texto-->
+                <br>
+                <label for="senha">Senha: </label>
+                <input type="password" name="senha"><!--entrada de dados tipo senha-->
+                <br>
+            </fieldset>
+            
+        </form>
+    </div>
+
+    <div class="form">
+        <form action="">
+            <fieldset>
+                <legend>
+                    Sexo
+                </legend>
+                <label for="sexo">Masculino: </label>
+                <input type="radio" value="masculino" name="sexo">
+                <label for="sexo">Feminino: </label>
+                <input type="radio" value="feminino" name="sexo">
+                <!--entrada de dados para selecionar apenas uma opção-->
+                <!--o atributo value serve para enviar um valor para o servidor-->
+                <!--para exibir a opção para o usuário necessita de um label-->
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Idade
+                </legend>
+                <label for=""></label>
+                <input type="number" step="1" min="0" max="100">
+                <!--entrada de números-->
+                <!--o atributo step define de qunto em quanto os números vão saltar-->
+                <!--o atributo min define o valor mínimo-->
+                <!--o atributo max define o valor máximo-->
+            </fieldset>
+            <fieldset>
+                <legend>Data de aniversário: 
+                </legend>
+                <label for="aniversario">Data de aniversário:</label>
+                <input type="date" name="aniversario">
+                <!--o atributo type define o tipo calendario-->
+            </fieldset>
+            <fieldset>
+                <legend>Hora de Nascimento</legend>
+                <label for="nascimento">Hora do Nascimento: </label>
+                <input type="time" name="nascimento">
+                <!--entrada para horas-->
+            </fieldset>
+            <fieldset>
+                <legend>Bandas Favoritas</legend>
+                <label for="banda">Led Zeppelin</label>
+                <input type="checkbox" value="Led Zeppelin" name="banda">
+                <label for="banda">Maneskin</label>
+                <input type="checkbox" value="Maneskin" name="banda">
+                <label for="banda">Red Hot Chilli Peppers</label>
+                <input type="checkbox" value="Red Hot Chilli Peppers" name="banda">
+                <!--entrada que o usuário pode marcar mais de uma opção-->
+            </fieldset>
+            <fieldset>
+                <legend>Estado do Nascimento</legend>
+            <select name="estado" id="">
+                <option value="MG">Minas Gerais</option>
+                <option value="MA">Maranhão</option>
+                <!--opção que o usuário poderá escolher-->
+            </select>
+            <!--única entrada que não é tag input-->
+            </fieldset>
+        </form>
+    </div>
+    <input type="submit"><!--Enviar dados-->
+</body>
+</html>
