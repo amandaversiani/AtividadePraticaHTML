@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prontuário</title>
+</head>
+<body>
+    <h1>Prontuário Eletrônico</h1>
+    <div>
+        <form action="">
+            <label for="nome">Nome completo:</label>
+            <input type="text" name="nome">
+            <br>
+            <label for="dataNasc">Data de nascimento:</label>
+            <input type="date" name="dataNasc">
+            <br>
+            <label for="telefone">Telefone: </label>
+            <input type="number" name="telefone">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email">
+            <br>
+            <label for="cpf">CPF:</label>
+            <input type="number" name="cpf">
+            <br>
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha">
+            <br>
+            <label for="genero">Gênero: </label>
+            <select name="genero" name="genero">
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+            </select>
+            <br>
+            <label for="altura">Altura: (em cm) </label>
+            <input type="number">
+            <br>
+            <label for="notas">Notas Adicionais:</label><br>
+            <textarea name="notas" rows="4" cols="50"></textarea><br><br>
+            <br>
+            <label for="foto">Foto do Paciente:</label>
+            <input type="file" name="foto"><br><br>
+            <br>
+            <label for="enviar"></label>
+            <input type="submit" name="enviar">
+        </form>
+    </div>
+    <div>
+        <table border="2">
+            <h1>Histórico de Consultas</h1>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Médico</th>
+                    <th>Diagnóstico</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>20/08/2024</th>
+                    <th>Dr. João Silva</th>
+                    <th>Hipertensão</th>
+                </tr>
+                <tr>
+                    <th>15/07/2024</th>
+                    <th>Dra. Maria Oliveira</th>
+                    <th>Diabetes Tipo 2</th>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <div>
+        <table border="2">
+            <h1>Medicamentos Prescritos</h1>
+            <thead>
+                <tr>
+                    <td>Medicamento</td>
+                    <td>Dosagem</td>
+                    <td>Instruções</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Metformina</td>
+                    <td>500mg</td>
+                    <td>Tomar 1 vez ao dia</td>
+                </tr>
+                <tr>
+                    <td>Atenolol</td>
+                    <td>50mg</td>
+                    <td>Tomar 2 vezes ao dia</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <table border="2">
+            <h1>Resultados de Exames</h1>
+            <thead>
+                <tr>
+                    <td>Data</td>
+                    <td>Tipo de Exame</td>
+                    <td>Resultado</td>
+                </tr>        
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10/08/2024</td>
+                    <td>Hemograma</td>
+                    <td>Normal</td>
+                </tr>
+                <tr>
+                    <td>05/07</td>
+                    <td>Colesterol</td>
+                    <td>Alto</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <table border="2">
+            <h1>Histórico de Cirurgias</h1>
+            <thead>
+                <tr>
+                    <td>Data</td>
+                    <td>Cirurgia</td>
+                    <td>Observações</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>12/06/2023</td>
+                    <td>Cirurgia de Apendicite</td>
+                    <td>Recuperação sem complicações</td>
+                </tr>
+                <tr>
+                    <td>30/04/2022</td>
+                    <td>Cirurgia de Vesícula</td>
+                    <td>Recuperação com complicações</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
