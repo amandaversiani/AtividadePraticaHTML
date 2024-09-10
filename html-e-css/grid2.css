@@ -1,0 +1,36 @@
+header{
+    background-color: darkblue;
+    grid-area: header;
+}
+
+main{
+    background-color: lightgrey;
+    grid-area: main;
+}
+
+footer{
+    background-color: blueviolet;
+    grid-area: footer;
+}
+
+#aside01{
+    background-color:green;
+    grid-area: aside01;
+}
+
+#aside02{
+    background-color: pink;
+    grid-area: aside02;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 20% 75% 5%;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-areas: 
+    "header header header"
+    "aside01 main aside02"
+    "footer footer footer";
+    height: 100%;
+
+}
