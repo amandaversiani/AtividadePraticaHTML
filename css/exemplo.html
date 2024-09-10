@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /*seletor de elemento*/
+        h1 {  /*nome da tag*/
+            color: blue; /*propriedade para ser alterada*/
+        }
+        p {
+            color: red;
+        }
+
+        /*seletor por id*/
+        #paragrafo1 { /*nome do id da tag*/
+            color: yellow;
+        }
+
+        /*seletor por seção*/
+        .tituloSecao { /*nome do atributo class*/
+            color: green;
+        }
+        .cabecalho{
+            background-color: pink;
+            text-align: center;
+            border: 5pt solid black; /*espessura tipo(solid ou dotted) cor*/
+            margin-bottom: 10pt;
+        }
+        .listas {
+            background-color: aqua;
+            border: 2pt dotted orange;
+        }
+        #beyonce {
+            color:red;
+        }
+        #ana {
+            color:yellow;
+        }
+        .lady_gaga{
+            color: green;
+        }
+        body{
+            background-color: mediumvioletred;
+            padding-left: 50pt;
+            padding-right: 50pt;
+        }
+        #listProfs {
+            margin-top: 10pt;
+        }
+        #cursos{
+            padding-left: 20pt;
+        }
+        #cabecalhoCursos{
+            padding-left: 70pt;
+        }
+    </style>
+    <div class="cabecalho">
+        <h1>PROZ</h1>
+    </div>
+    <div class="listas"id="cursos">
+        <div id="cabecalhoCursos">
+            <h2 class="tituloSecao" >Cursos</h2>
+        </div>
+        <ul>
+            <li id="beyonce">Desenvolvimento de Sistemas</li>
+            <li class="lady_gaga">Enfermagem</li>
+            <li class="lady_gaga">Administração</li>
+        </ul>
+        <p id="paragrafo1">Venha estudar na Proz!
+        <p>Temos ótimos cursos!
+    </div>
+    <div class="listas" id="listProfs">
+        <h2 class="tituloSecao">Professores</h2>
+        <ul id="ana">
+            <li>Gleison Brito</li>
+            <li>Edson</li>
+            <li>Leila</li>
+        </ul>
+    </div>
+</body>
+</html>
