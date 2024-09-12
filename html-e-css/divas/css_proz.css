@@ -1,20 +1,23 @@
 @font-face {
     font-family: Vogue;
     src: url(Vogue.ttf);
- }
+}
 
 * {
     font-family: Vogue;
+    text-align: center;
 }
 .cabecalho{
     color: goldenrod;
     background-color: black;
     grid-area: cabecalho;
     padding-left: 10px;
+    font-size: 2em;
 }
 h1{
     margin-block-end: 0pt;
 }
+
 .navbar{
     display: flex;
     background-color: black;
@@ -27,7 +30,8 @@ h1{
     border: 2px solid goldenrod;
     color: white;
     margin-right: 10px;
-    padding: 5px;
+    margin-bottom: 5px;
+    padding: 15px;
 }
 
 .conteudo{
@@ -35,19 +39,37 @@ h1{
     grid-area: central;
 }
 .conteudoitem{
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: black;
     color: white;
-    
     padding-right: 20%;
     padding-left: 20%;
     text-align: justify;
     margin-bottom: 5px;
 }
+
+.lateralesquerda{
+    background-color: #9a7f00;
+    grid-area: esquerda;
+}
+
+.lateraldireita {
+    background-color: #9a7f00;
+    grid-area: direita;
+}
 .container{
     display: grid;
-    grid-template-columns: 20% 60 20%;
-    grid-template-rows: 10% 5% 85%;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10% 5% auto;
     grid-template-areas: 
-    ""
-    ;
+    "cabecalho cabecalho cabecalho"
+    "menu menu menu"
+    "esquerda central direita";
+    height: auto;
+}
+
+body {
+    height: 100%;
+    width: 100%;
 }
