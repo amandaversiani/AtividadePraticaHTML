@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var nome;
+        nome = 'Ameinda e Marry';
+        var idade;
+        idade = 29;
+        var peso = 61.4
+        alert("Hello World! " + nome + " sua idade é: " + idade);
+        alert("Peso: " + peso);
+        alert(10 + 4);
+        function exibirAlerta() {
+            alert("Eiiiiiie povo!");
+        }
+        function soma(a , b) { 
+            var a = parseInt(prompt("Informe um valor: "));  //Entrada
+            var b = parseInt(prompt("Informe um valor:"));
+            soma = a + b;
+
+            alert(soma);
+        }
+
+        function imc(){
+            var peso;
+            var altura;
+
+            peso = parseFloat(prompt("Informe o peso: "));
+            altura = parseFloat(prompt("Informe a altura:"));
+
+            var imc = peso/(altura * altura);
+
+            alert("Seu imc é: + imc")
+
+        }
+    </script>
+</head>
+<body>
+    <!--<button onclick="exibirAlerta()">ALERTA</button>-->
+    <button onclick="imc()">ALERTA</button>
+</body>
+</html>
