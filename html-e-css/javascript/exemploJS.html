@@ -21,7 +21,7 @@
         function soma(a , b) { 
             var a = parseInt(prompt("Informe um valor: "));  //Entrada
             var b = parseInt(prompt("Informe um valor:"));
-            soma = a + b;
+            var soma = a + b;
 
             alert(soma);
         }
@@ -97,10 +97,89 @@
                 alert(num);
             }
         }
+
+        function calculadora(){
+            var operacao = prompt("Deseja fazer qual operação?");
+            var num1 = parseFloat(prompt("Informe o primeiro número: "));
+            var num2 = parseFloat(prompt("Informe o segundo número: "));
+
+            if(operacao == "soma") {
+                alert(num1 + num2);
+            } else {
+                if (operacao == 'subtracao'){
+                    alert(num1 - num2);
+                } else {
+                    if (operacao == 'multiplicacao'){
+                        alert(num1 * num2);
+                    } else {
+                        if (operacao == 'divisao'){
+                            alert(num1/num2);
+                        } else {
+                            alert('Operação inválida');
+                        }        
+                }   }
+            }
+        }
+
+
+        function calculadora2() {
+            var operacao = prompt("Deseja fazer qual operação?");
+            var num1 = parseFloat(prompt("Informe o primeiro número: "));
+            var num2 = parseFloat(prompt("Informe o segundo número: "));
+
+            switch (operacao) {
+                case 'soma':
+                    alert(num1 + num2);
+                    break;
+                case 'subtracao':
+                    alert(num1 - num2);
+                    break;
+                case 'multiplicacao':
+                    alert(num1 * num2);
+                    break;
+                case 'divisao':
+                    alert(num1/num2);
+                    break;                
+            
+                default:
+                    alert("Operação Inválida");
+                    break;
+            }
+        }
+        
+        function vetor(){
+            var vertorNum = [1,2,3]
+            /*
+            1. Inicia o contador
+            2. Condição de parada
+            3. Incremento de contador
+            */
+            var soma = 0;
+            for (var cont = 0;cont < vertorNum.length; cont++){
+                soma += vertorNum[cont];
+            }
+            
+            alert("soma de " + vertorNum.length + " elementos: " + soma)
+        }
+        
+        function lervetor() {
+            do{
+                var vetor = []
+                var valor = parseInt(prompt("Informe o valor: "));
+                vetor.push(valor);
+            }while (valor != -1);
+
+            return vetor;
+        }
+
+        function ultimaposicaovetor() {
+            var a = lervetor();
+            alert(a[a.lenght - 2]);
+        }
     </script>
 </head>
 <body>
-    /*<!--<button onclick="exibirAlerta()">ALERTA</button>-->*/
-    <button onclick="conteAte10()">ALERTA</button>
+    <!--<button onclick="exibirAlerta()">ALERTA</button>-->
+    <button onclick="ultimaposicaovetor()">ALERTA</button>
 </body>
 </html>
